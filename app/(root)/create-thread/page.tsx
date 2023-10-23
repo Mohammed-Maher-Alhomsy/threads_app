@@ -11,7 +11,7 @@ const Page = async () => {
 
   console.log(userInfo);
 
-  if (!userInfo.onboarded) redirect("/onboarding");
+  if (!userInfo?.onboarded) redirect("/onboarding");
 
   return (
     <>
